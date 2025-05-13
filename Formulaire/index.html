@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titre">
+        <h1>Formulaire de contact</h1>
+    </div>
+    <div class="formulaire">
+
+        <label for="pseudo">Votre Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo"><br>
+        <br>
+        <label for="mot-de-passe">Votre Mot de Passe </label>
+        <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Votre mot de passe" required><br>
+        <br>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="Votre e-mail" required><br>
+        <br>
+        <label for="sujet">Sujet du Message</label>
+        <br>
+        <select name="sujet" id="sujet" required>
+            <option value="" selected>J'ai une question</option>
+            <option value="suggestion">Je fais une suggestion</option>
+            <option value="probleme">Je rencontre un probleme</option>
+            <option value="autre">Autre</option>
+        </select>
+        <br>
+        <label for="message">Votre message</label>
+        <textarea name="message" id="message" placeholder="Votre message"></textarea>
+        <br>
+    </div>
+    <br>
+    <div class="radio">
+        <label for="urgent">Urgent</label>
+        <input type="radio" name="choix" id="urgent">
+
+        <label for="normal">Normal</label>
+        <input type="radio" name="choix" id="normal">
+
+        <label for="lent">Lent</label>
+        <input type="radio" name="choix" id="lent" checked>
+    </div>
+    <br>
+    <div class="politique">
+        <input type="checkbox" name="politique" id="politique">
+        <br>
+        <label for="politique">J'ai lu et j'accepte la <span style="color: blue;"><u>politque de confidentialité</u></span> du site</label>
+    </div>
+    <br>
+    <input type="submit" name="envoyer" id="envoyer">
+</body>
+</html>Q
